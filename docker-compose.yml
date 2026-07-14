@@ -1,0 +1,17 @@
+services:
+  benchmark-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: application-benchmark
+    ports:
+      - "3000:3000"
+    environment:
+      MONOLITH_BASE_URL: http://host.docker.internal:8000
+      CUSTOMER_SERVICE_URL: http://host.docker.internal:8100
+      ACCOUNT_SERVICE_URL: http://host.docker.internal:8200
+      NODE_ENV: production
+    volumes:
+      - ./reports:/app/reports
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,11 @@
+.git
+.next
+node_modules
+reports/*.json
+reports/*.html
+k6/data/*.json
+.seed-progress.json
+.env.local
+npm-debug.log*
+Dockerfile
+docker-compose.yml
