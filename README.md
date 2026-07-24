@@ -2,6 +2,10 @@
 
 This project compares the performance of a monolithic application and a microservices-based application under different test conditions.
 
+![Application Benchmark preview](public/benchmark.jpg)
+
+A web-based benchmark application for comparing the performance of monolithic and microservices architectures using Grafana k6.
+
 ## Live Demo
 
 https://benchmark.memyweb.com
@@ -52,6 +56,12 @@ This project is part of my Master's thesis work on software architecture migrati
 The main purpose is to run the same benchmark scenarios against both architectures and compare how they behave under increasing traffic and different workloads.
 
 The project is also published as a demonstration of the benchmark implementation and deployment process.
+
+## Benchmark Results
+
+The benchmark evaluates both architectures under the same test scenarios, making it easier to compare their behaviour under different workloads.
+
+The complete benchmark results and analysis are included in the accompanying Master's thesis.
 
 ## License
 
