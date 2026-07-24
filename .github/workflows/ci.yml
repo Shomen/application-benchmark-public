@@ -1,13 +1,14 @@
 name: Build and deploy benchmark app
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  # pull_request:
+  #   branches:
+  #     - main
+  
 env:
   APP_DIR: /opt/apps/application-benchmark
   REPO_URL: github-benchmark-app:your-org/application-benchmark.git
