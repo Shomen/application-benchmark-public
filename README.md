@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Application Benchmark
 
-## Getting Started
+This project compares the performance of a monolithic application and a microservices-based application under different test conditions.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://benchmark.memyweb.com
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What it does
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The benchmark runs different types of performance tests against the deployed applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The tests are executed with Grafana k6 and include:
 
-## Learn More
+- Smoke testing
+- Load testing
+- Stress testing
+- Spike testing
+- Soak testing
+- Scalability testing
 
-To learn more about Next.js, take a look at the following resources:
+The application collects and presents metrics such as:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Average response time
+- Minimum and maximum response time
+- Requests per second
+- Success and failure counts
+- Error rate
+- Number of virtual users
+- Overall execution time
+- Percentile response times such as p90 and p95
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The results are shown through a web interface so that the behaviour of the monolith and microservices can be compared more easily.
 
-## Deploy on Vercel
+## Technology
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- React
+- Next.js
+- TypeScript
+- Node.js
+- D3.js
+- Grafana k6
+- Docker
+- Docker Compose
+- GitHub Actions
+- Nginx Proxy Manager
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Purpose
+
+This project is part of my Master's thesis work on software architecture migration and performance evaluation.
+
+The main purpose is to run the same benchmark scenarios against both architectures and compare how they behave under increasing traffic and different workloads.
+
+The project is also published as a demonstration of the benchmark implementation and deployment process.
+
+## License
+
+This repository is shared for demonstration and evaluation purposes.
